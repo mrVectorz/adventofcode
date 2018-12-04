@@ -1,4 +1,7 @@
-# day 4
+# https://adventofcode.com/2018/day/4
+# Author: Marc Methot
+# Email: mb.methot@gmail.com
+
 # part 1
 # Collected way too much data for no reason
 from datetime import datetime

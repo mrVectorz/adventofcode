@@ -1,4 +1,6 @@
 # https://adventofcode.com/2018/day/1
+# Author: Marc Methot
+# Email: mb.methot@gmail.com
 
 # part 1
 freq=0
@@ -25,6 +27,7 @@ while True:
       freq_list.append(freq)
   counter += 1
 
+exit
 # slow
 import numpy as np
 freq = 0

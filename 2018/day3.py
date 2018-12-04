@@ -1,4 +1,7 @@
-# day 3
+# https://adventofcode.com/2018/day/3
+# Author: Marc Methot
+# Email: mb.methot@gmail.com
+
 # part 1
 
 material = (1000, 1000)

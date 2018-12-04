@@ -1,4 +1,6 @@
-# day 2
+# https://adventofcode.com/2018/day/2
+# Author: Marc Methot
+# Email: mb.methot@gmail.com
 
 # part 1
 multi = {"doubles":0, "triples":0}
