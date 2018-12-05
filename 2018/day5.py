@@ -24,7 +24,7 @@ print(len(poly))
 # part 2
 lenght = 1e6
 for letter in string.ascii_lowercase:
-  temp = [char for char in f if char != letter.lower() and char != letter.upper()]
+  temp = [char for char in f if char != letter and char != letter.upper()]
   poly = []
   for i in temp:
     if poly and i == letters[poly[-1]]:
