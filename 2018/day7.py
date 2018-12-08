@@ -1,3 +1,7 @@
+# https://adventofcode.com/2018/day/7
+# Author: Marc Methot
+# Email: mb.methot@gmail.com
+
 with open('day_7_input.txt') as f:
   steps = [i.strip() for i in f.readlines()]
 
