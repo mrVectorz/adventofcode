@@ -2,7 +2,7 @@
 *_input.txt
 
 # Session Creds
-.credentials
+*.credentials
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
