@@ -1,6 +1,9 @@
 # Input Data
 *_input.txt
 
+# Session Creds
+.credentials
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
