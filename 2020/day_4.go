@@ -33,14 +33,14 @@ func checkPartB(id []string) (isGood bool){
 	// issue year
 	iyr, _ := strconv.Atoi(id[1])
 	if iyr < 2010 || iyr > 2020 {
-    return false
-  }
+		return false
+	}
 
 	// Exp year
 	eyr, _ := strconv.Atoi(id[2])
-  if eyr < 2020 || eyr > 2030 {
-    return false
-  }
+	if eyr < 2020 || eyr > 2030 {
+		return false
+	}
 
 	// height
 	hgtUnit := id[3][len(id[3])-2:len(id[3])]
@@ -135,23 +135,23 @@ func main() {
 			case "iyr" == value[0:3]:
 				iyr = value[4:len(value)]
 				id[1] = iyr
-      case "eyr" == value[0:3]:
-        eyr = value[4:len(value)]
+			case "eyr" == value[0:3]:
+				eyr = value[4:len(value)]
 				id[2] = eyr
-      case "hgt" == value[0:3]:
-        hgt = value[4:len(value)]
+			case "hgt" == value[0:3]:
+				hgt = value[4:len(value)]
 				id[3] = hgt
-      case "hcl" == value[0:3]:
-        hcl = value[4:len(value)]
+			case "hcl" == value[0:3]:
+				hcl = value[4:len(value)]
 				id[4] = hcl
-      case "ecl" == value[0:3]:
-        ecl = value[4:len(value)]
+			case "ecl" == value[0:3]:
+				ecl = value[4:len(value)]
 				id[5] = ecl
-      case "pid" == value[0:3]:
-        pid = value[4:len(value)]
+			case "pid" == value[0:3]:
+				pid = value[4:len(value)]
 				id[6] = pid
-      case "cid" == value[0:3]:
-        cid = value[4:len(value)]
+			case "cid" == value[0:3]:
+				cid = value[4:len(value)]
 				id[7] = cid
 			default:
 				fmt.Printf("ERROR VALUE NOT MATCHED -> %s %s\n", value, value[0:3])
@@ -167,10 +167,10 @@ func main() {
 	fmt.Println("Part a:", partA)
 
 	partB := 1
-  for i := range records {
-    if checkPartB(records[i][:]) {
-      partB++
-    }
-  }
-  fmt.Println("Part b:", partB)
+	for i := range records {
+		if checkPartB(records[i][:]) {
+			partB++
+		}
+	}
+	fmt.Println("Part b:", partB)
 }
