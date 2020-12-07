@@ -24,8 +24,11 @@ func containsString(s []string, e string) bool {
 
 func containsColor(color string){
 	for i, v := range rules {
+		if containsString(partA, i) {
+			continue
+		}
 		matched, _ := regexp.MatchString(color, v)
-		if matched && ! containsString(partA, i) {
+		if matched {
 			partA = append(partA, i)
 			containsColor(i)
 		}
@@ -39,9 +42,9 @@ func colorCost(color string)(totalCost int) {
 	totalCost = 0
 	multiplier := 1
 	bags := strings.Split(rules[color], ", ")
+	re := regexp.MustCompile(`[a-z]+ [a-z]+`)
 	for i := range bags {
 		multiplier, _ = strconv.Atoi(bags[i][0:1])
-		re := regexp.MustCompile(`[a-z]+ [a-z]+`)
 		cost := colorCost(re.FindString(bags[i]))
 		totalCost = totalCost+(multiplier*cost)
 	}
