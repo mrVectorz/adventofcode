@@ -14,12 +14,12 @@ var partA []string
 var rules = make(map[string]string)
 
 func containsString(s []string, e string) bool {
-		for _, a := range s {
-				if a == e {
-						return true
-				}
+	for _, a := range s {
+		if a == e {
+			return true
 		}
-		return false
+	}
+	return false
 }
 
 func containsColor(color string){
