@@ -1,0 +1,1 @@
+BEGIN {d=0;h=0;D=0;H=0};{if ($1 == "forward"){h=h+$2; H=H+$2; D=D+($2*d)} else if ($1 == "up"){d=d-$2} else if ($1 == "down"){d=d+$2}};END{print "Part 1\nhorizontal: " h "\ndepth: " d "\nmultiplied: " d*h "\n----\nPart 2\nhorizontal: " H "\ndepth: " D*H}
